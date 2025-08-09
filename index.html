@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Professional Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Animated Gradient Header */
+    header {
+      background: linear-gradient(-45deg, #4f46e5, #3b82f6, #10b981, #f59e0b);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* Profile Photo Styling */
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 5px solid white;
+      margin-bottom: 15px;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
+      animation: floatImage 4s ease-in-out infinite;
+    }
+    @keyframes floatImage {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      animation: textPulse 3s ease-in-out infinite;
+    }
+    @keyframes textPulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      animation: fadeBlink 4s ease-in-out infinite;
+    }
+    @keyframes fadeBlink {
+      0%, 100% { opacity: 0.9; }
+      50% { opacity: 0.6; }
+    }
+
+    /* Buttons */
+    .buttons {
+      margin-top: 15px;
+    }
+    .buttons a {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 5px;
+      background: linear-gradient(45deg, #06b6d4, #3b82f6);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      animation: buttonGlow 2.5s ease-in-out infinite;
+    }
+    @keyframes buttonGlow {
+      0%, 100% { box-shadow: 0px 0px 10px rgba(59,130,246,0.5); }
+      50% { box-shadow: 0px 0px 25px rgba(59,130,246,0.8); }
+    }
+    .buttons a.download {
+      background: linear-gradient(45deg, #f59e0b, #ef4444);
+    }
+
+    /* Sections */
+    section {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      margin-top: 20px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      animation: floatSection 6s ease-in-out infinite;
+    }
+    @keyframes floatSection {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    h2 {
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      background: linear-gradient(45deg, #06b6d4, #3b82f6, #10b981, #f59e0b);
+      background-size: 400% 400%;
+      animation: gradientText 6s ease infinite;
+      display: inline-block;
+    }
+    @keyframes gradientText {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    ul { padding-left: 20px; animation: listFade 5s ease-in-out infinite; }
+    @keyframes listFade {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.8; }
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background: linear-gradient(45deg, #1f2937, #3b82f6);
+      color: white;
+      padding: 20px;
+      margin-top: 30px;
+      animation: footerPulse 5s ease-in-out infinite;
+    }
+    @keyframes footerPulse {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="aakhil .me.jpg" alt="Profile Photo">
+    <h1>Shaik Mahammad Aakhil</h1>
+    <p>B.Tech Student | Developer | AI Enthusiast</p>
+    <div class="buttons">
+      <a href="mailto:smdaakhil@gmail.com">Email Me</a>
+      <a class="download" href="https://docs.google.com/uc?export=download&id=1vGtoaIG5BJTCupRLm6Lu1nrZyiMX01Fx" download>Download CV</a>
+    </div>
+  </header>
+
+  <!-- About Me -->
+  <section>
+    <h2>About Me</h2>
+    <p>I am pursuing B.tech 3rd year in the stream of Artificial intelligence and machine learning</p>
+  </section>
+
+  <!-- Skills -->
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Programming: Python, C, Java</li>
+      <li>Web Development: HTML, CSS, JavaScript</li>
+      <li>Tools: Git, VS Code</li>
+      <li>Databases: MySQL</li>
+    </ul>
+  </section>
+
+  <!-- Projects -->
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li><b>Smart Administration System:</b> Web app for efficient student record management.</li>
+      <li><b>Online Examination System:</b> Secure, remote examination platform.</li>
+      <li><b>AI Chatbot:</b> Intelligent chatbot that learns from user interactions.</li>
+    </ul>
+  </section>
+
+  <!-- Education -->
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li>B.Tech - QIS College of Engineering and Technology (2023 - 2027)</li>
+      <li>Intermediate - Sadhana Junior College (2021 - 2023)</li>
+      <li>SSC - Bhashyam High School (2020 - 2021)</li>
+    </ul>
+  </section>
+  <!-- Personal Details -->
+<section class="personal-section">
+  <h2>Personal Details</h2>
+  <ul>
+    <li><b>Father's Name:</b> Shaik Mahammad Hussain</li>
+    <li><b>Mother's Name:</b> Shaik Shahida</li>
+    <li><b>Date of Birth:</b> 20-01-2005</li>
+    <li><b>Languages Known:</b> Telugu, Hindi, English</li>
+    <li><b>Hobbies:</b> Playing Cricket, Volleyball</li>
+  </ul>
+</section>
+
+
+  <!-- Contact -->
+  <section>
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: <a href="mailto:smdaakhil@gmail.com">smdaakhil@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/aakhil12345" target="_blank">github.com/aakhil12345</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/shaik-aakhil-b3a716246/" target="_blank">linkedin.com/in/shaik-aakhil-b3a716246</a></li>
+    </ul>
+
+
+  </section>
+  <!-- Send Query Section -->
+<section>
+  <h2>Send a Query</h2>
+  <p>If you have any questions or want to collaborate, feel free to reach out!</p>
+  
+  <div class="buttons">
+    <!-- Email Query Button -->
+    <a href="mailto:smdaakhil@gmail.com" target="_blank"class="download">
+      Send Query via Email
+    </a>
+    
+    <!-- Instagram Query Button -->
+    <a href="https://www.instagram.com/aakhilsmd/" target="_blank" class="download">
+      Send Query via Instagram
+    </a>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Shaik Mahammad Aakhil. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
